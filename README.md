@@ -4,6 +4,8 @@ Super simple example of how to setup a node project to import ember.
 
 # Show Me!
 
+    git clone git@github.com:dustyjewett/ember-shim-for-node-example.git
+    cd ember-shim-for-node-example
     npm install
     npm start
 
