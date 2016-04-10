@@ -1,0 +1,21 @@
+{
+  "name": "node-es6",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Dusty Jewett <dusty@patentnavigation.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember": "^2.4.4"
+  }
+}
