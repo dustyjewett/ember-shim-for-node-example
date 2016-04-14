@@ -9,3 +9,9 @@ let ComputedObject = Ember.Object.extend({
 
 let obj = ComputedObject.create({val:"the Value!"});
 console.log(obj.get('computedValue'));
+
+import FormatDate from 'ember-intl/formatters/format-date';
+
+let formatter = FormatDate.create();
+
+console.log(formatter.format(new Date(), {locale:"en-us"}));

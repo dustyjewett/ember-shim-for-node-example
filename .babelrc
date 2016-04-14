@@ -21,8 +21,7 @@
     "babel-plugin-transform-es2015-typeof-symbol",
     ["transform-es2015-modules-commonjs-ember", {
       moduleReplacements: [
-        {in:'hyper-chicken', out:'hyper-chicken/addon'},
-        {in:'head-museum', out:'head-museum/addon'}
+        {in:'ember-intl', out:'ember-intl/addon'}
       ]
     }],
     ["babel-plugin-transform-regenerator", { async: false, asyncGenerators: false }]
