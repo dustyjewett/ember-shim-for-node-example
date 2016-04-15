@@ -2,6 +2,7 @@ import Ember from "ember";
 var jsdom = require('jsdom').jsdom;
 var document = jsdom('<html></html>', {});
 var window = document.defaultView;
+var $ = require('jquery')(window);
 
 // jsdom provides a LOT of primitives, like Node and other classes... we want to copy them over to globals
 function propagateToGlobal (window) {
@@ -16,7 +17,6 @@ GLOBAL.document = document;
 GLOBAL.window = window;
 
 // A lot of things need Ember.$ defined... so we instantiate jquery on top of our jsdom.
-var $ = require('jquery')(window);
 Ember.$ = $;
 
 // We need to ensure that our adons aren't ignored... and for some reason this doesn't
